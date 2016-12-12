@@ -1,4 +1,5 @@
 <?php
+
 //Establish database connection
 try {
 	$db = new PDO('mysql:host=localhost;dbname=football;charset=utf8', 'www', 'www');
