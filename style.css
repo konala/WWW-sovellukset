@@ -1,0 +1,847 @@
+
+/* Universal styling */
+body {
+		min-width: 390px;
+		background-image: url(grass.jpg);
+		margin: 0;
+		padding: 0;
+}
+
+html {
+	font-family: "Georgia";
+}
+
+/* SCREEN WIDTH > 800px */
+@media all and (min-width: 801px) {
+
+	/* Header, title, navigation */
+	header {
+		text-align: center;
+
+	}
+
+	#loginWrapper {
+		background-color: #8ce26a;
+		font-variant: small-caps;
+		font-size: 1.5em;
+		margin-bottom: 10px;
+		width: 750px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#loginWrapper span {
+		font-family: "Courier New";
+		font-variant: none;
+	}
+
+	#pageTitle {
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 10px;
+		padding: 20px 10px;
+		text-align: center;
+		width: 728px;
+		margin: 5px auto;
+		background-color: #8ce26a;
+		text-shadow: 1px 1px #676866;
+		display: inline-block;
+		font-variant: small-caps;
+		font-size: 2em;
+	}
+
+	#football {
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+		position: relative;
+		border-style: solid;
+		border-width: 1px;
+		animation-name: bounce;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+		background-image: url(football.png);
+		background-size: cover;
+		background-color: #f5f7f4;
+	}	
+
+	@keyframes bounce {
+
+		0% {
+			left: 0px;
+			transform: rotate(0deg);	
+		}
+		25% {
+			left: 25%;
+			transform: rotate(90deg);
+		}
+
+		50% {
+			left: 50%;
+			transform: rotate(180deg);
+		}
+
+		75% {
+			left: 75%;
+			transform: rotate(270deg);
+		}
+
+		100% {
+			left: 90%;
+			transform: rotate(360deg);
+
+		}
+	}
+
+	#navDiv {
+		width: 750px;
+		margin: 0 auto;
+	}
+
+	#navigation, #mainNav {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+		background-color: #1a3011;
+		text-align: center;
+		display: inline-block;
+		width: 750px;
+
+	}
+
+
+	.navigation {
+		text-decoration: none;
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 25px 15px;
+		font-weight: bold;
+		font-variant: small-caps;
+	}
+	
+	#navigation li {
+		display: inline-block;
+		
+	}
+	#navigation li:hover {
+		background-color: #0e1c08;
+	}
+
+	#mainNav li:hover {
+		background-color: #0e1c08;
+	}
+
+	/* Front page body */
+	#mainDiv {
+
+		border-radius: 5px;
+		padding:5px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 5px;
+		min-height: 75%;
+		width: 740px;
+		background-color: #8ce26a;
+	}
+
+	/* Field reservation tab("Kentän varaaminen") */
+	#reservation-table-div {
+		background-color: #8ce26a;
+		margin: 0;
+		padding: 0;
+		margin: 0 auto;
+		border-radius: 5px;
+		width: 750px;
+
+	}
+	#fieldResDiv {
+		padding: 0;
+		margin: 0 auto;
+		margin-top: 10px;
+		background-color: #8ce26a;
+		width: 750px;
+		height: 60px;
+		border-radius: 5px;
+	}
+
+	#selectField {
+		font-size: 1.2em;
+		background-color: white;
+		font-family: "Georgia";
+		font-variant: small-caps;
+		min-width: 400px;
+		padding: 5px;
+		margin-top: 12px;
+		margin-bottom: 10px;
+		margin-left: 10px;
+		margin-right: 5px;
+	}
+
+	#showResButton, #helpButton {
+		font-family: "Georgia";
+		font-size: 1.2em;
+		font-variant: small-caps;
+		padding: 0;
+		margin: 0;
+		position: relative;
+		margin-right: 5px;
+		height: 36px;
+		width: 100px;
+	}
+
+	#helpButton {
+		font-weight: bold;
+		width: 50px;
+	}
+
+	#res td {
+		min-height: 50px;
+		min-width: 70px;
+	}
+	
+	#res, #myRes, #fieldTable {
+		background-color: rgba(234, 251, 228, 0.9);
+		font-family: Arial, Helvetica, sans-serif;
+		margin: 0 auto;
+		padding: 5px;
+		border-radius: 5px;
+		width: 730px;
+		border-collapse: collapse;
+	}
+	
+	/* Own reservations tab ("Omat varaukset") */ 
+	#fieldTable {
+		padding: 0;
+	}
+
+	#my-reservations-div {
+		background-color: #8ce26a;
+		margin: 0;
+		padding: 0;
+		margin: 0 auto;
+		border-radius: 5px;
+		width: 750px;
+		
+	}
+
+	#myRes caption {
+		font-family: Arial, Helvetica, sans-serif;
+		font-variant: small-caps;
+		width: 750px;
+		background-color: rgba(92, 182, 57, 0.7);
+		font-weight: bold;
+		height: 50px;
+		font-size: 1.4em;
+
+	}
+
+	#myRes td {
+		text-align: center;
+		font-size: 1.2em;
+		min-height: 30px;
+		min-width: 50px;
+	}
+
+	/* Fields tab ("Kentät") */
+	#fields-table-div {
+		background-color: #8ce26a;
+		margin: 0;
+		padding: 0;
+		margin: 0 auto;
+		border-radius: 5px;
+		width: 750px;
+		margin-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.fieldTable-lastCol {
+		min-width: 150px;
+		min-height: 50px;
+		text-align: center;
+	}
+
+	.fieldTable-midCol {
+		min-width: 350px;
+		padding-left: 5px;
+	}
+
+	.fieldTable-firstCol {
+		min-width: 200px;
+		padding-left: 5px;
+
+	}
+
+	/* Universal table styling */
+	table td {
+		border: 1px solid black;
+	}
+
+	
+	tr:hover {
+		background-color: white;
+	}
+
+	th {
+		background-color: #8ce26a;
+	}
+
+	td button {
+	  background: #63ff82;
+	  background-image: -webkit-linear-gradient(top, #63ff82, #128c1a);
+	  background-image: -moz-linear-gradient(top, #63ff82, #128c1a);
+	  background-image: -ms-linear-gradient(top, #63ff82, #128c1a);
+	  background-image: -o-linear-gradient(top, #63ff82, #128c1a);
+	  background-image: linear-gradient(to bottom, #63ff82, #128c1a);
+	  -webkit-border-radius: 10;
+	  -moz-border-radius: 10;
+	  border-radius: 10px;
+	  -webkit-box-shadow: 0px 1px 5px #666666;
+	  -moz-box-shadow: 0px 1px 5px #666666;
+	  box-shadow: 0px 1px 5px #666666;
+	  padding: 5px;
+	  border: solid #344d3e 1px;
+	  text-decoration: none;
+	  min-width: 36px;
+	  min-height: 36px;
+
+	}
+
+	td button:hover {
+	  background: #329402;
+	  background-image: -webkit-linear-gradient(top, #329402, #0d4013);
+	  background-image: -moz-linear-gradient(top, #329402, #0d4013);
+	  background-image: -ms-linear-gradient(top, #329402, #0d4013);
+	  background-image: -o-linear-gradient(top, #329402, #0d4013);
+	  background-image: linear-gradient(to bottom, #329402, #0d4013);
+	  text-decoration: none;
+	}
+
+	/* Style for buttons found in tables */
+	.tick {
+		position: relative;
+		top: -4px;
+		right: -10px;
+	}
+	.view {
+		position: relative;
+		left: 10px;
+	}
+	.delete {
+		position: relative;
+		top: -4px;
+		right: -10px;
+	}
+	.lock {
+		position: relative;
+		top: -4px;
+		right: -10px;
+		
+	}
+	.delOwn {
+		width: 100px;
+		height: 30px;
+	}
+
+	.weather, .map {
+		display: inline-block;
+		margin: auto;
+		min-width: 70px;
+		min-height: 40px;
+	}
+
+	.weather {
+		margin-right: 5px;
+	}
+	
+
+	/* Login and register */
+	#login-login {
+		width: 740px;
+		margin: 0 auto;
+		margin-top: 5px;
+		background-color: #8ce26a;
+		border-radius: 5px;
+		padding: 5px 5px;
+		font-variant: small-caps;
+	}
+
+	#login-title {
+		text-align: center;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+
+	#login-register-title {
+		font-size: 1.1em;
+		display: inline-block;
+	}
+
+	#login-register {
+		display: inline-block;
+		font-size: 1.5em;
+	}
+
+	.login-form {
+		font-family: "Georgia";
+		display: block;
+		margin: 0 auto;
+		margin-top: 5px;
+		font-size: 1.3em;
+	}
+
+	#login-form-email, #login-form-password {
+		width: 300px;
+		height: 40px;
+	}
+
+	#login-form-submit {
+		font-variant: small-caps;
+	}
+
+	#login-logout {
+		width: 740px;
+		margin: 0 auto;
+		margin-top: 5px;
+		background-color: #8ce26a;
+		border-radius: 5px;
+		padding: 5px 5px;
+		font-variant: small-caps;
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	#login-register-div {
+		width: 740px;
+		margin: 0 auto;
+		margin-top: 5px;
+		background-color: #8ce26a;
+		border-radius: 5px;
+		padding: 5px 5px;
+		display: flex;
+	}
+
+	#login-register-div input {
+		
+		margin: 0 auto;
+		margin-top: 5px;
+		width: 450px;
+		height: 25px;
+		font-family: "Georgia";
+
+	}
+
+	#login-register-info, #login-register-form-div {
+		flex: 1;
+		padding: 1em;
+		
+	}
+
+	#login-register-info p {
+		font-variant: small-caps;
+		margin: 0;
+		padding: 0;
+		margin-top: 5px;
+		height: 24px;
+		border-bottom: 1px solid;
+	}
+	
+	
+	
+
+
+}
+/* SCREEN WIDTH < 801px */
+@media all and (max-width: 800px) {
+	/* Header, title, navigation */
+	#pageTitle {
+		font-size: 2em;
+		border-radius: 0px;
+		padding: 30px 30px;
+		text-align: center;
+		max-width: 800px;
+		min-width: 330px;
+		margin: 0px auto;
+		background-color: #8ce26a;
+		font-weight: bold;
+		font-variant: small-caps;
+		text-shadow: 1px 1px green;
+	}
+
+	#mainNav {
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		display: block;
+		width: 100%;
+	}
+
+	#menuButton {
+		font-size: 3em;
+		margin: 0;
+		padding: 0;
+		padding-left: 10px;
+		background-color: #1a3011;
+		color: white;
+		
+		height: 80px;
+		text-align: left;
+		user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+	}
+
+	#menuButton:hover {
+		background-color: #0e1c08;
+		cursor: pointer;
+	}
+
+	#navigation {
+		margin: 0;
+		padding: 0;
+		background-color: #1a3011;
+	}
+
+	.navigation {
+		color: white;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+		padding: 5px 5px;
+		font-weight: bold;
+		font-variant: small-caps;
+	}
+
+	.navigation:hover {
+		background-color: #0e1c08;
+	}
+
+	#loginWrapper {
+		background-color: #8ce26a;
+		font-variant: small-caps;
+	}
+
+	#loginWrapper span {
+		font-family: "Courier New";
+		font-variant: none;
+	}
+	ul li {
+		list-style: none;
+	}
+
+	/* Front page body */
+	#mainDiv {
+
+		border-radius: 5px;
+		padding:5px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 20px;
+		min-height: 75%;
+		max-width: 700px;
+		background-color: #8ce26a;
+	}
+
+	/* Field reservation tab("Kentän varaaminen") */
+	#reservation-table-div {
+		background-color: #8ce26a;
+		margin: 0;
+		padding: 0;
+		margin: 0 auto;
+		border-radius: 5px;
+		max-width: 700px;
+
+	}
+	#fieldResDiv {
+		padding: 0;
+		margin: 0 auto;
+		margin-top: 10px;
+		background-color: #8ce26a;
+		max-width: 700px;
+		max-height: 200px;
+		border-radius: 5px;
+	}
+
+	#selectField {
+		font-size: 1.2em;
+		background-color: white;
+		font-family: "Georgia";
+		font-variant: small-caps;
+		min-width: 100px;
+		padding: 5px;
+		margin-top: 12px;
+		margin-bottom: 10px;
+		margin-left: 10px;
+		margin-right: 5px;
+	}
+
+	#showResButton, #helpButton {
+		font-family: "Georgia";
+		font-size: 1.2em;
+		font-variant: small-caps;
+		padding: 0;
+		margin: 0;
+		position: relative;
+		margin: 5px;
+		height: 36px;
+		width: 100px;
+	}
+
+	#helpButton {
+		font-weight: bold;
+		width: 50px;
+	}
+
+	#res td {
+		min-height: 60px;
+		min-width: 40px;
+	}
+	
+	#res, #myRes, #fieldTable {
+		background-color: rgba(234, 251, 228, 0.9);
+		font-family: Arial, Helvetica, sans-serif;
+		margin: 0 auto;
+		padding: 5px;
+		border-radius: 5px;
+		max-width: 700px;
+		border-collapse: collapse;
+	}
+	/* Own reservations tab ("Omat varaukset") */ 
+	#fieldTable {
+		padding: 0;
+	}
+
+	#my-reservations-div {
+		background-color: #8ce26a;
+		margin: 0;
+		padding: 0;
+		margin: 0 auto;
+		border-radius: 5px;
+		max-width: 700px;
+		margin-top: 5px;
+		
+	}
+
+	#myRes caption {
+		margin-top: 5px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-variant: small-caps;
+		max-width: 700px;
+		background-color: rgba(92, 182, 57, 0.7);
+		font-weight: bold;
+		max-height: 150px;
+		font-size: 1.4em;
+
+	}
+
+	#myRes td {
+		text-align: center;
+		font-size: 1.2em;
+		min-height: 30px;
+		min-width: 50px;
+	}
+
+	/* Fields tab ("Kentät") */
+	#fields-table-div {
+		background-color: #8ce26a;
+		margin: 0;
+		padding: 0;
+		margin: 0 auto;
+		border-radius: 5px;
+		max-width: 700px;
+		margin-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.fieldTable-lastCol {
+		max-width: 150px;
+		min-height: 50px;
+		text-align: center;
+	}
+
+	.fieldTable-midCol {
+		max-width: 350px;
+		padding-left: 5px;
+	}
+
+	.fieldTable-firstCol {
+		max-width: 200px;
+		padding-left: 5px;
+
+	}
+
+	table td {
+		border: 1px solid black;
+	}
+
+	
+	tr:hover {
+		background-color: white;
+	}
+
+	th {
+		background-color: #8ce26a;
+	}
+
+	td button {
+	  background: #63ff82;
+	  background-image: -webkit-linear-gradient(top, #63ff82, #128c1a);
+	  background-image: -moz-linear-gradient(top, #63ff82, #128c1a);
+	  background-image: -ms-linear-gradient(top, #63ff82, #128c1a);
+	  background-image: -o-linear-gradient(top, #63ff82, #128c1a);
+	  background-image: linear-gradient(to bottom, #63ff82, #128c1a);
+	  -webkit-border-radius: 10;
+	  -moz-border-radius: 10;
+	  border-radius: 10px;
+	  -webkit-box-shadow: 0px 1px 5px #666666;
+	  -moz-box-shadow: 0px 1px 5px #666666;
+	  box-shadow: 0px 1px 5px #666666;
+	  padding: 5px;
+	  border: solid #344d3e 1px;
+	  text-decoration: none;
+	  min-width: 36px;
+	  min-height: 36px;
+
+	}
+
+	td button:hover {
+	  background: #329402;
+	  background-image: -webkit-linear-gradient(top, #329402, #0d4013);
+	  background-image: -moz-linear-gradient(top, #329402, #0d4013);
+	  background-image: -ms-linear-gradient(top, #329402, #0d4013);
+	  background-image: -o-linear-gradient(top, #329402, #0d4013);
+	  background-image: linear-gradient(to bottom, #329402, #0d4013);
+	  text-decoration: none;
+	}
+
+	/* Style for buttons found in tables */
+	.tick {
+		position: relative;
+		top: -4px;
+		right: -10px;
+	}
+	.view {
+		position: relative;
+		left: 10px;
+	}
+	.delete {
+		position: relative;
+		top: -4px;
+		right: -10px;
+	}
+	.lock {
+		position: relative;
+		top: -4px;
+		right: -10px;
+		
+	}
+	.delOwn {
+		max-width: 100px;
+		max-height: 30px;
+	}
+
+	.weather, .map {
+		display: inline-block;
+		margin: auto;
+		min-width: 70px;
+		min-height: 40px;
+	}
+
+	.weather {
+		margin-right: 5px;
+	}
+	
+
+	/* Login and register */
+	#login-login {
+		max-width: 700px;
+		margin: 0 auto;
+		margin-top: 5px;
+		background-color: #8ce26a;
+		border-radius: 5px;
+		padding: 5px 5px;
+		font-variant: small-caps;
+	}
+
+	#login-title {
+		text-align: center;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+
+	#login-register-title {
+		font-size: 1.1em;
+		display: inline-block;
+	}
+
+	#login-register {
+		display: inline-block;
+		font-size: 1.5em;
+	}
+
+	.login-form {
+		font-family: "Georgia";
+		display: block;
+		margin: 0 auto;
+		margin-top: 5px;
+		font-size: 1.3em;
+	}
+
+	#login-form-email, #login-form-password {
+		max-width: 300px;
+		height: 40px;
+	}
+
+	#login-form-submit {
+		font-variant: small-caps;
+	}
+
+	#login-logout {
+		max-width: 700px;
+		margin: 0 auto;
+		margin-top: 5px;
+		background-color: #8ce26a;
+		border-radius: 5px;
+		padding: 5px 5px;
+		font-variant: small-caps;
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	#login-register-div {
+		max-width: 700px;
+		margin: 0 auto;
+		margin-top: 5px;
+		background-color: #8ce26a;
+		border-radius: 5px;
+		padding: 5px 5px;
+		display: flex;
+	}
+
+	#login-register-div input {
+		
+		margin: 0 auto;
+		margin-top: 5px;
+		max-width: 450px;
+		height: 25px;
+		font-family: "Georgia";
+		display: block;
+
+	}
+
+	#login-register-info, #login-register-form-div {
+		flex: 1;
+		padding: 1em;
+		
+	}
+
+	#login-register-info p {
+		font-variant: small-caps;
+		margin: 0;
+		padding: 0;
+		margin-top: 5px;
+		height: 24px;
+		border-bottom: 1px solid;
+	}
+}
