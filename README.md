@@ -1,2 +1,2 @@
 # WWW-sovellukset
-Valitse kansio c9 harjoitustyö vertaisarviointiin!
+Valitse kansio c9 harjoitustyön vertaisarviointiin!
