@@ -257,7 +257,7 @@ html {
 	}
 
 	.fieldTable-lastCol {
-		min-width: 150px;
+		min-width: 100px;
 		min-height: 50px;
 		text-align: center;
 	}
@@ -344,17 +344,13 @@ html {
 		height: 30px;
 	}
 
-	.weather, .map {
+	.map {
 		display: inline-block;
 		margin: auto;
 		min-width: 70px;
 		min-height: 40px;
 	}
 
-	.weather {
-		margin-right: 5px;
-	}
-	
 
 	/* Login and register */
 	#login-login {
@@ -741,17 +737,12 @@ html {
 		max-height: 30px;
 	}
 
-	.weather, .map {
+	.map {
 		display: inline-block;
 		margin: auto;
 		min-width: 70px;
 		min-height: 40px;
 	}
-
-	.weather {
-		margin-right: 5px;
-	}
-	
 
 	/* Login and register */
 	#login-login {
