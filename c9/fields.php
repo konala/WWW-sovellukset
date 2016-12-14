@@ -6,11 +6,15 @@ class Field {
 
 	//Get field data from database
 	public function __construct() {
-		// Open database connection
+		//Establish database connection
+		$servername = getenv('IP');
+		$username = getenv('C9_USER');
+		$password = "";
+		$database = "c9";
 		try {
-			$db = new PDO('mysql:host=localhost;dbname=football;charset=utf8', 'www', 'www');
+		    $db = new PDO('mysql:host=' . $servername . ';dbname=' . $database . ';charset=utf8', $username, '');
 		} catch (PDOException $e) {
-			echo "Connection failed: " . $e->getMessage();
+		    echo "Connection failed: " . $e->getMessage();
 		}
 		// Create and execute statement
 		$stmt = $db->prepare("SELECT * FROM field;");
